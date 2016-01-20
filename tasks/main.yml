@@ -1,0 +1,13 @@
+---
+- name: Set hostname
+  hostname: name={{ hostname }}
+  when: hostname is defined
+  tags: ['common', 'hostname']
+
+- name: Install via yum
+  include: yum.yml
+  when: ansible_pkg_mgr == "yum"
+
+- name: Install via apt
+  include: apt.yml
+  when: ansible_pkg_mgr == "apt"
