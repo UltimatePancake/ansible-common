@@ -1,10 +1,10 @@
-# dg_common
+# common
 
 ## Usage
 
 ```yaml
 roles:
-  - dg_common
+  - common
 ```
 
 ## Notes
