@@ -1,8 +1,3 @@
-common_packages_yum:
-  - epel-release
-  - vim
-  - unzip
-
-common_packages_apt:
+common_packages:
   - vim
   - unzip
